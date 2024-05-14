@@ -1,5 +1,5 @@
 function Opgaver() {
-  return <h1>Opgaver</h1>;
+  return <img src="opgaver.png" alt="Opgaver" className="w-full" />;
 }
 
 export default Opgaver;

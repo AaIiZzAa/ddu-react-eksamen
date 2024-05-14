@@ -20,7 +20,7 @@ function Navbar(props: any) {
       >
         <div className="flex flex-row justify-between w-1/3 ml-[10%] p-2">
           <NavLink
-            to="/"
+            to="/forside"
             style={({ isActive }) =>
               isActive ? { backgroundColor: secondaryColor } : {}
             }
@@ -59,6 +59,19 @@ function Navbar(props: any) {
             Opgaver
           </NavLink>
           <NavLink
+            to="/fravær"
+            className={({ isActive }) =>
+              isActive
+                ? "bg-primary rounded-lg text-white font-bold p-4"
+                : "p-4 hover:text-white"
+            }
+            style={({ isActive }) =>
+              isActive ? { backgroundColor: secondaryColor } : {}
+            }
+          >
+            Fravær
+          </NavLink>
+          <NavLink
             to="/beskeder"
             className={({ isActive }) =>
               isActive
@@ -70,6 +83,45 @@ function Navbar(props: any) {
             }
           >
             Beskeder
+          </NavLink>
+          <NavLink
+            to="/karakterer"
+            className={({ isActive }) =>
+              isActive
+                ? "bg-primary rounded-lg text-white font-bold p-4"
+                : "p-4 hover:text-white"
+            }
+            style={({ isActive }) =>
+              isActive ? { backgroundColor: secondaryColor } : {}
+            }
+          >
+            Karakterer
+          </NavLink>
+          <NavLink
+            to="/spørgeskema"
+            className={({ isActive }) =>
+              isActive
+                ? "bg-primary rounded-lg text-white font-bold p-4"
+                : "p-4 hover:text-white"
+            }
+            style={({ isActive }) =>
+              isActive ? { backgroundColor: secondaryColor } : {}
+            }
+          >
+            Spørgeskema
+          </NavLink>
+          <NavLink
+            to="/bøger"
+            className={({ isActive }) =>
+              isActive
+                ? "bg-primary rounded-lg text-white font-bold p-4"
+                : "p-4 hover:text-white"
+            }
+            style={({ isActive }) =>
+              isActive ? { backgroundColor: secondaryColor } : {}
+            }
+          >
+            Bøger
           </NavLink>
         </div>
       </nav>

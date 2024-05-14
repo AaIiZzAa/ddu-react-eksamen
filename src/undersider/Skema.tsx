@@ -1,7 +1,7 @@
 function Skema() {
   return (
     <>
-      <h1>Skema</h1>
+      <img src="skema.png" alt="skema" className="w-full" />
     </>
   );
 }
